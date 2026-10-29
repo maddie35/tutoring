@@ -1,25 +1,25 @@
 :root {
-  --bg: #fbf8f3;
+  --bg: #f4f8fd;
   --surface: #ffffff;
-  --ink: #1f2430;
-  --muted: #4f5666;
-  --accent: #b3471d;
+  --ink: #1b2440;
+  --muted: #4d566e;
+  --accent: #2862c8;
   --accent-ink: #ffffff;
-  --accent-soft: #f6e4da;
-  --line: #e6dfd4;
+  --accent-soft: #eaf2fd;
+  --line: #d8e3f2;
   --radius: 14px;
   --max: 1040px;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #171a21;
-    --surface: #20242d;
-    --ink: #eef0f4;
-    --muted: #b7bdc9;
-    --accent: #f08a5d;
-    --accent-ink: #1a1a1a;
-    --accent-soft: #3a2a23;
-    --line: #333946;
+    --bg: #151a24;
+    --surface: #1e2532;
+    --ink: #eef1f6;
+    --muted: #b3bdcd;
+    --accent: #7fb3f5;
+    --accent-ink: #0d1520;
+    --accent-soft: #24344a;
+    --line: #2f3a4b;
   }
 }
 * { box-sizing: border-box; }
@@ -29,7 +29,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 400 1.0625rem/1.65 Inter, system-ui, sans-serif;
+  font: 400 1.0625rem/1.65 "Atkinson Hyperlegible", Verdana, system-ui, sans-serif;
 }
 h1, h2, h3 { font-family: Fraunces, Georgia, serif; line-height: 1.2; margin: 0 0 .5em; }
 h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); }
@@ -124,8 +124,9 @@ details p { margin: .75rem 0 0; color: var(--muted); }
 .statement p:last-child { margin: 0; }
 .contact .note { color: var(--muted); font-size: .95rem; margin-top: 1.25rem; }
 
-/* Readable mode: hyperlegible font, extra spacing, no italics */
-body.readable, body.readable h1, body.readable h2, body.readable h3,
+/* Easier reading: hyperlegible headings too, extra spacing, no italics.
+   Body text is already Atkinson Hyperlegible by default. */
+body.readable h1, body.readable h2, body.readable h3,
 body.readable .brand, body.readable .price {
   font-family: "Atkinson Hyperlegible", Verdana, sans-serif;
 }
