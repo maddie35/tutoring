@@ -31,7 +31,7 @@ body {
   color: var(--ink);
   font: 400 1.0625rem/1.65 "Atkinson Hyperlegible", Verdana, system-ui, sans-serif;
 }
-h1, h2, h3 { font-family: Fraunces, Georgia, serif; line-height: 1.2; margin: 0 0 .5em; }
+h1, h2, h3 { font-family: Verdana; line-height: 1.2; margin: 0 0 .5em; }
 h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); }
 h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
 h3 { font-size: 1.25rem; }
@@ -123,15 +123,6 @@ details p { margin: .75rem 0 0; color: var(--muted); }
 }
 .statement p:last-child { margin: 0; }
 .contact .note { color: var(--muted); font-size: .95rem; margin-top: 1.25rem; }
-
-/* Easier reading: hyperlegible headings too, extra spacing, no italics.
-   Body text is already Atkinson Hyperlegible by default. */
-body.readable h1, body.readable h2, body.readable h3,
-body.readable .brand, body.readable .price {
-  font-family: "Atkinson Hyperlegible", Verdana, sans-serif;
-}
-body.readable { line-height: 1.85; letter-spacing: .02em; word-spacing: .08em; }
-body.readable em, body.readable .hint { font-style: normal; }
 
 footer { padding: 2rem 0 3rem; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); }
 
